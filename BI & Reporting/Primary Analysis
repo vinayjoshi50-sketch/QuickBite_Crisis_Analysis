@@ -1,7 +1,7 @@
 ﻿/*Primary Analysis : 
 
 1. Monthly Orders: Compare total orders across pre-crisis (Jan–May 2025) vs crisis 
-(Jun–Sep 2025). How severe is the decline?  */
+   (Jun–Sep 2025). How severe is the decline?  */
 
 with customers_orders as (
     select
@@ -23,8 +23,8 @@ from customers_orders;
 
 
 /* 2. Which top 5 city groups experienced the highest percentage decline in orders 
-during the crisis period compared to the pre-crisis period? */
-with city_orders as (
+      during the crisis period compared to the pre-crisis period? */
+      with city_orders as (
     select
         customer_city,
         order_period,
@@ -53,8 +53,8 @@ from pivoted
 order by pct_decline desc;
 
 /* 3. Among restaurants with at least 50 pre-crisis orders, which top 10 high-volume 
-restaurants experienced the largest percentage decline in order counts during 
-the crisis period? */
+      restaurants experienced the largest percentage decline in order counts during 
+      the crisis period? */
 
 with orders_by_period as (
     select
@@ -92,7 +92,7 @@ from high_volume
 order by percentage_decline desc;
 
 /* 4. Cancellation Analysis: What is the cancellation rate trend pre-crisis vs post-crisis, 
-and which cities are most affected? */ 
+      and which cities are most affected? */ 
 
  -- Overall cancellation trend
 select
@@ -133,8 +133,8 @@ from pivoted
 order by rate_increase desc;
 
 /* 5. Ratings Fluctuation: Track average customer rating month-by-month. Which 
-months saw the sharpest drop? */ 
-select top 5
+      months saw the sharpest drop? */ 
+      select top 5
     *,
     rank() over(order by percentage_change) as rank_months
 from (
@@ -149,7 +149,7 @@ group by month(review_timestamp)
 
 
 /* 6. Revenue Impact: Estimate revenue loss from pre-crisis vs crisis (based on 
-subtotal, discount, and delivery fee). */
+      subtotal, discount, and delivery fee). */
 
 with revenue_calc as (
     select
@@ -176,8 +176,8 @@ from revenue_calc;
 
 
 /* 7. Loyalty Impact: Among customers who placed five or more orders before the 
-crisis, determine how many stopped ordering during the crisis, and out of those, 
-how many had an average rating above 4.5? */
+	  crisis, determine how many stopped ordering during the crisis, and out of those, 
+	  how many had an average rating above 4.5? */
 
 with pre_crisis as (
     select 
@@ -210,10 +210,10 @@ where p.pre_order_count >= 5
   and (q.post_order_count is null or q.post_order_count = 0);
 
 
-/* 8.  Customer Lifetime Decline: Which high-value customers (top 5% by total 
-spend before the crisis) showed the largest drop in order frequency and ratings 
-during the crisis? What common patterns (e.g., location, cuisine preference, 
-delivery delays) do they share?   */
+/* 8. Customer Lifetime Decline: Which high-value customers (top 5% by total 
+      spend before the crisis) showed the largest drop in order frequency and ratings 
+      during the crisis? What common patterns (e.g., location, cuisine preference, 
+      delivery delays) do they share?   */
 
 with pre_spend as (
     select 
@@ -476,6 +476,7 @@ order by customers_with_order_decline desc;
 
 /* 9. Delivery SLA: Measure average delivery time across phases. Did SLA 
       compliance worsen significantly in the crisis period?  */ 
+
     select 
     c.cust_period as phase,
     avg(dp.actual_delivery_time_mins) as avg_actual_delivery_time_mins,
@@ -494,8 +495,8 @@ order by c.cust_period;
 
 
 /* 10. Sentiment Insights: During the crisis period, identify the most frequently 
-   occurring negative keywords in customer review texts. (Hint: Use a Word Cloud 
-   visual in Power BI to visualize the findings.)  */
+       occurring negative keywords in customer review texts. (Hint: Use a Word Cloud 
+       visual in Power BI to visualize the findings.)  */
 
    -- Step 1: Tokenize reviews into words and filter to post-crisis
  with tokenized as (
@@ -566,6 +567,7 @@ group by
 order by frequency desc
 
 /* 12. Average sentiment score pre vs crisis */
+
 select
     case 
         when review_timestamp between '2025-01-01' and '2025-05-31 23:59:59' then 'Pre-crisis'
@@ -667,3 +669,4 @@ select
 from monthly_revenue
 
          
+

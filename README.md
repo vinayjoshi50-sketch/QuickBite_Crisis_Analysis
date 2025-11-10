@@ -24,7 +24,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: Houses business-ready required for reporting and analytics.
 
-📊 BI: Analytics & Reporting (Data Analysis)
+## 📊 BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
@@ -35,7 +35,8 @@ Develop SQL-based analytics to deliver detailed insights into:
   ![Recovery Dashboard](BI%20&%20Reporting/Recovery%20Dashboard.png) 
 
 
-📈 Business Impact
+## 📈 Business Impact
+
 These insights equip stakeholders with critical business metrics that go beyond surface-level reporting. The outputs serve as a foundation for:
 
 * Strategic decision-making during crisis recovery.

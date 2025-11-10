@@ -1,6 +1,7 @@
 # QuickBite_Crisis_Analysis
 
 Welcome to QuickBite_Crisis_Analysis repository! 🚀
+
 This project demonstrates an end to end data warehousing and analytics model, from building a data warehouse to generating actionable insights from the problem statement. This Project involves data-ingestion, data-cleaning, data-modelling, insight generation and recommendations into the crisis that happened at QuickBite food-delivery chain.
 
 

@@ -1,4 +1,4 @@
-﻿/*Primary Analysis (Based on Available data): 
+﻿/*Primary Analysis : 
 
 1. Monthly Orders: Compare total orders across pre-crisis (Jan–May 2025) vs crisis 
 (Jun–Sep 2025). How severe is the decline?  */
@@ -665,4 +665,5 @@ select
 	current_month_revenue - lag(current_month_revenue) over(order by month_name) as diff_revenue,
 	round(((current_month_revenue - lag(current_month_revenue) over(order by month_name))/lag(current_month_revenue) over(order by month_name)) * 100,2) as percentage_change
 from monthly_revenue
+
          

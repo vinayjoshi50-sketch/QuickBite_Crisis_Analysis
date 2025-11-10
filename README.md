@@ -26,7 +26,6 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 
 ## 📊 BI: Analytics & Reporting (Data Analysis)
 
-#### Objective
 Develop SQL-based analytics to deliver detailed insights into:
 - **Customer Behavior & ratings**
 - **Order & Sales Trends**
@@ -38,8 +37,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 ## 📈 Business Impact
 
 These insights equip stakeholders with critical business metrics that go beyond surface-level reporting. The outputs serve as a foundation for:
-
-* Strategic decision-making during crisis recovery.
+* Strategic decision-making during crisis recovery
 * Targeted interventions to improve customer experience and operational efficiency.
 * Data-backed recommendations that strengthen resilience and guide QuickBite toward sustainable growth.
 

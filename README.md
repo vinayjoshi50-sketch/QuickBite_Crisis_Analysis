@@ -32,6 +32,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Citywise Analysis**
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making. 
+
 ![Recovery Dashboard](BI & Reporting/Recovery Dashboard.png)
 
 

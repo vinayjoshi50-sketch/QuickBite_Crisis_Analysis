@@ -26,7 +26,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 ### BI: Analytics & Reporting (Data Analysis)
 
 
-![Recovery Dashboard](BI & Reporting/Recovery Dashboard.png) 
+![Recovery Dashboard](BI%20&%20Reporting/Recovery%20Dashboard.png) 
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:

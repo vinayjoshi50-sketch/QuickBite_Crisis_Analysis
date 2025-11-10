@@ -2,7 +2,7 @@
 
 Welcome to QuickBite_Crisis_Analysis repository! 🚀
 
-This project demonstrates an end to end data warehousing and analytics model, from building a data warehouse to generating actionable insights from the problem statement. This Project involves data-ingestion, data-cleaning, data-modelling, insight generation and recommendations into the crisis that happened at QuickBite food-delivery chain.
+This project showcases a comprehensive and end-to-end data warehousing and analytics solution, designed to transform raw operational data into actionable business insights. It spans the full analytics lifecycle—from data ingestion and cleaning to data modeling, visualization, and strategic recommendations.
 
 
 ## 📖 Project Overview
@@ -26,16 +26,21 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 
 ### BI: Analytics & Reporting (Data Analysis)
 
-
-![Recovery Dashboard](BI%20&%20Reporting/Recovery%20Dashboard.png) 
-
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
 - **Customer Behavior & ratings**
 - **Order & Sales Trends**
 - **Citywise Analysis**
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making. 
+  ![Recovery Dashboard](BI%20&%20Reporting/Recovery%20Dashboard.png) 
+
+
+📈 Business Impact
+These insights equip stakeholders with critical business metrics that go beyond surface-level reporting. The outputs serve as a foundation for:
+• 	Strategic decision-making during crisis recovery.
+• 	Targeted interventions to improve customer experience and operational efficiency.
+• 	Data-backed recommendations that strengthen resilience and guide QuickBite toward sustainable growth.
+
 
 
 

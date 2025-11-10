@@ -24,7 +24,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: Houses business-ready required for reporting and analytics.
 
-### BI: Analytics & Reporting (Data Analysis)
+📊 BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
@@ -37,9 +37,10 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 📈 Business Impact
 These insights equip stakeholders with critical business metrics that go beyond surface-level reporting. The outputs serve as a foundation for:
-• 	Strategic decision-making during crisis recovery.
-• 	Targeted interventions to improve customer experience and operational efficiency.
-• 	Data-backed recommendations that strengthen resilience and guide QuickBite toward sustainable growth.
+
+* Strategic decision-making during crisis recovery.
+* Targeted interventions to improve customer experience and operational efficiency.
+* Data-backed recommendations that strengthen resilience and guide QuickBite toward sustainable growth.
 
 
 
